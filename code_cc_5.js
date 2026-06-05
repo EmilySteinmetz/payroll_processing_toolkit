@@ -33,3 +33,14 @@ function processPayroll (employee) {
         netPay: netPay
     };
 }
+
+console.log("Testing individual functions:");
+console.log(calculateBasePay(63, 45));
+console.log(calculateOvertimePay(63, 45));
+console.log(calculateTaxes(2992.50));
+
+console.log("Payroll Report:");
+
+employees.forEach(employee => {
+    console.log(processPayroll(employee));
+});
